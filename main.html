@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Calculadoras</title>
+    <script src="calculadora.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <!--TITULO-->
+        <h1>Minhas Calculadoras</h1>
+        <p>Calule o que quiser rápido e facil</p>
+       
+        <nav>
+            <!--NAVEGAÇÃO-->
+            <ul>
+                <li><a href="">IMC</a></li>
+                <li><a href="">Descontos</a></li>
+                <li><a href="">Juros Simples</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <!--Calculadora IMC-->
+                <h3>Calculadora de IMC</h3>
+
+                <label for="peso">Peso</label>
+                <input type="number" id="peso">
+
+                <label for="altura">Altura</label>
+                <input type="number" id="altura">
+
+                <p id="resultado"></p>
+
+                <button onclick="calculadoraIMC()">CalcularIMC</button>
+
+            </article>
+            <article>
+                <!--Calculadora de Desconto-->
+                <h3>Calculadora de Desconto</h3>
+
+                 <label for="valor">Valor</label>
+                <input type="number" id="valor">
+
+                <label for="desconto">Desconto (%)</label>
+                <input type="number" id="desconto">
+
+                <p id="descontado"></p>
+
+                <button onclick="calculadoraDesconto()">Calcular Desconto</button>
+
+            </article>
+            <article>
+                <!--Calculadora de Juros Simples-->
+                <h3>Calculadora de Juros Simples</h3>
+
+                <label for="valorIni">Valor Inicial</label>
+                <input type="number" id="valorIni">
+
+                <label for="prazo">Numero de Meses</label>
+                <input type="number" id="prazo">
+
+                <label for="taxa">Taxa de Juros</label>
+                <input type="number" id="taxa">
+
+                <p id="parcela"></p>
+
+                <button onclick="calculadoraJurosSimples()">Calcular Juros Simples</button>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Minhas Calculadoras - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
